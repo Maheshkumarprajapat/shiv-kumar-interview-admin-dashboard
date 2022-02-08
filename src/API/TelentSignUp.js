@@ -32,7 +32,7 @@ export default function TelentSignUp() {
                 draggable: true,
                 progress: undefined,
             });
-            fetch('http://localhost:3000/talent', {
+            fetch('http://wren.in:3200/api/sign-up/talent', {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ firstname, lastname, username, email, password })

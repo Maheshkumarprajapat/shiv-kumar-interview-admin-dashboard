@@ -32,7 +32,7 @@ export default function FunSignUp() {
                 draggable: true,
                 progress: undefined,
             });
-            fetch('http://localhost:3000/fan', {
+            fetch('http://wren.in:3200/api/sign-up/fan', {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ firstname, lastname, username, email, password })
