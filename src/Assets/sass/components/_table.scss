@@ -3,12 +3,53 @@
         @include flex(center, space-between, null);
         width: 100%;
         margin-bottom: 20px;
+        .dropdown {
+            button {
+                background-color: $white !important;
+                border: 1px solid rgba(1, 9, 55, 0.1) !important;
+                border-radius: 10px;
+                font-size: 13px;
+                color: $blue !important;
+                height: 44px;
+                width: 204px;
+                @include flex(center, null, null);
+                &::after {
+                    right: 14px;
+                    position: absolute;
+                    top: 50%;
+                }
+                &:focus {
+                    box-shadow: none !important;
+                }
+                img {
+                    margin-right: 10px;
+                }
+            }
+            .dropdown-menu {
+                width: 100%;
+            }
+        }
     }
 }
 .table_sec {
     padding: 13px 20px;
     box-shadow: $shadow;
-
+    background-color: $white;
+    border-radius: 10px;
+    &.bank-sec {
+        background-color: #262d54;
+        position: relative;
+        .icon {
+            position: absolute;
+            right: 15px;
+            top: 28px;
+            border-radius: 10px;
+            width: 46px;
+            height: 45px;
+            background: rgba(242, 244, 252, 0.06);
+            @include flex(center, center, null);
+        }
+    }
     .table {
         margin-bottom: 0;
         & > :not(:first-child) {
@@ -51,5 +92,40 @@
             padding-right: 0;
             text-align: right;
         }
+    }
+}
+
+.item-box {
+    box-shadow: $shadow;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 17px 20px;
+    margin-bottom: 25px;
+    @include flex(center, space-between, null);
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .content {
+        h3 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            margin-bottom: 7px;
+            color: $blue;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            opacity: 0.6;
+            color: $blue;
+            line-height: 30px;
+            margin-bottom: 0;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .img-sec {
+        background-color: red;
     }
 }

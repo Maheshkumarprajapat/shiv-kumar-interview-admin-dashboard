@@ -1,33 +1,33 @@
 import { Link, NavLink } from "react-router-dom";
 import React from "react";
 
-import { IconAdd, IconBell, IconLogo } from '../../Assets/images/icons/index'
-import user from '../../Assets/images/user.jpg'
+import { IconAdd, IconCricle, IconMugic, IconMessage, IconFile, IconWallet, IconBell, IconLogo } from '../Assets/images/icons'
+import user from '../Assets/images/user.jpg'
 const routes = [
   {
     path: "/",
     name: "Dashboard",
-    icon: IconAdd,
+    icon: IconCricle,
   },
   {
     path: "/users",
     name: "Users",
-    icon: IconAdd,
+    icon: IconMessage,
   },
   {
     path: "/messages",
     name: "Messages",
-    icon: IconAdd,
+    icon: IconFile,
   },
   {
     path: "/analytics",
     name: "Analytics",
-    icon: IconAdd,
+    icon: IconWallet,
   },
   {
     path: "/file-manager",
     name: "File Manager",
-    icon: IconAdd,
+    icon: IconMugic,
   }
 ];
 

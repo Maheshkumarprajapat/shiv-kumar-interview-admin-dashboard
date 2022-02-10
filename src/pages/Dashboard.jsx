@@ -1,36 +1,74 @@
 import React from 'react'
 import { Col, Container, Row, Table, Dropdown } from 'react-bootstrap'
+import { IconCalendar, IconHome } from '../Assets/images/icons'
+import BankChart from '../components/BankChart'
+import Credit from '../components/Credit'
+import Item from '../components/Item'
+// import BankChart from '../components/BankChart'
 
 const Dashboard = () => {
   return (
     <div className='home'>
-      <Container><div className="home_head">
-        <div className="heading_tab">
-          <h2 className='heading'>Hello, Liam!</h2>
-          <p className='sub_heading'>Finance Mission Control</p>
-        </div>
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Last 7 Days          </Dropdown.Toggle>
+      <Container>
+        <div className="home_head">
+          <div className="heading_tab">
+            <h2 className='heading'>Hello, Liam!</h2>
+            <p className='sub_heading'>Finance Mission Control</p>
+          </div>
+          <Dropdown>
+            <Dropdown.Toggle id="dropdown-basic">
+              <img src={IconCalendar} alt="" />
+              <span>Last 7 Days</span>
+            </Dropdown.Toggle>
 
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Sunday</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Monday</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-      </div>
+            <Dropdown.Menu>
+              <Dropdown.Item href="/">Sunday</Dropdown.Item>
+              <Dropdown.Item href="/">Monday</Dropdown.Item>
+              <Dropdown.Item href="/">Tuesday</Dropdown.Item>
+              <Dropdown.Item href="/">Wednesday</Dropdown.Item>
+              <Dropdown.Item href="/">Thursday</Dropdown.Item>
+              <Dropdown.Item href="/">Friday</Dropdown.Item>
+              <Dropdown.Item href="/">Saturday</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </div>
 
         <Row>
-          <Col lf={4} md={4}>s</Col>
-          <Col lf={4} md={4}>d</Col>
+          <Col lf={8} md={8}>
+            <Row>
+              <Col lf={6} md={6}>
+                <div className="table_sec mb-4">
+
+                </div>
+                <Item title='Analysis on receivables' number='$ 498.58' />
+                <Item title='Burn Rate' number='$ 650.10' month='per month' />
+
+              </Col>
+              <Col lf={6} md={6}>
+                <div className="table_sec bank-sec mb-4">
+                  <div className="icon">
+                    <img src={IconHome} alt="" />
+                  </div>
+                  <div className="bankchart">
+                    <BankChart />
+                  </div>
+                  <div className="credit">
+                    <Credit />
+                  </div>
+                </div>
+                <Item title='Analysis on payable' number='$ 5,410.40' />
+                <Item title='Customer lifetime value' number='$ 8,312.31' />
+
+              </Col>
+            </Row>
+          </Col>
           <Col lf={4} md={4}>
             <div className='table_sec'>
               <div className="table_sec_head">
                 <span>Expenses</span>
                 <span>This Week</span>
               </div>
-              <Table bordered>
+              <Table>
                 <thead>
                   <tr>
                     <th>#</th>

@@ -1,4 +1,3 @@
-import SideBar from "./components/Sidebar/SideBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Dashboard from "./pages/Dashboard";
@@ -7,6 +6,7 @@ import Messages from "./pages/Messages";
 import FileManager from "./pages/FileManager";
 import Analytics from "./pages/Analytics";
 import Bell from "./pages/Bell";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
