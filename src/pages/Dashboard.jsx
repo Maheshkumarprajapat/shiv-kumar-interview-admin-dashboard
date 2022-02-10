@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Container, Row, Table, Dropdown } from 'react-bootstrap'
-import { IconCalendar, IconHome } from '../Assets/images/icons'
+import { IconCalendar, IconHome, Icon3 } from '../Assets/images/icons'
 import BankChart from '../components/BankChart'
-import Credit from '../components/Credit'
+import CreditChart from '../components/CreditChart'
 import Item from '../components/Item'
 // import BankChart from '../components/BankChart'
 import payable from '../Assets/images/payable.png'
@@ -51,14 +51,18 @@ const Dashboard = () => {
               </Col>
               <Col lf={6} md={6}>
                 <div className="table_sec bank-sec mb-4">
-                  <div className="icon">
-                    <img src={IconHome} alt="" />
-                  </div>
+
                   <div className="bankchart">
+                    <div className="icon">
+                      <img src={IconHome} alt="" />
+                    </div>
                     <BankChart />
                   </div>
                   <div className="credit">
-                    <Credit />
+                    <div className="icon">
+                      <img src={Icon3} alt="" />
+                    </div>
+                    <CreditChart />
                   </div>
                 </div>
                 <Item title='Analysis on payable' number='$ 5,410.40' image={payable} />
