@@ -62,7 +62,6 @@ const Dashboard = () => {
                 </div>
                 <Item title='Analysis on payable' number='$ 5,410.40' />
                 <Item title='Customer lifetime value' number='$ 8,312.31' />
-
               </Col>
             </Row>
           </Col>
