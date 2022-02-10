@@ -57,20 +57,22 @@
         }
         & > :not(caption) > * > * {
             padding-left: 0;
+            font-family: "IBMPlexSans-Regular";
+            color: #010937;
         }
     }
     &_head {
         @include flex(center, space-between, null);
         margin-bottom: 13px;
         span {
-            font-family: Circular Std;
+            font-family: "circular-std-medium";
             font-size: 14px;
             font-weight: 500;
             line-height: 18px;
         }
     }
     thead th {
-        // font-family: "Circular-Std-Font";
+        font-family: "circular-std-medium";
         font-size: 12px;
         font-weight: 400;
         line-height: 16px;
@@ -91,6 +93,7 @@
             font-weight: 600;
             padding-right: 0;
             text-align: right;
+            color: #010937;
         }
     }
 }
@@ -125,7 +128,12 @@
             }
         }
     }
-    .img-sec {
-        background-color: red;
-    }
+    // .img-sec {
+    //     background-color: red;
+    // }
 }
+
+@font-face {
+    font-family: "IBMPlexSans-Regular";
+    src: url("../../fonts/IBMPlexSans-Regular.ttf");
+  }

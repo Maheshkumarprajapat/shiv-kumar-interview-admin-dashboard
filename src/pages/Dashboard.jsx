@@ -5,6 +5,11 @@ import BankChart from '../components/BankChart'
 import Credit from '../components/Credit'
 import Item from '../components/Item'
 // import BankChart from '../components/BankChart'
+import payable from '../Assets/images/payable.png'
+import receivables from '../Assets/images/receivables.png'
+import Rate from '../Assets/images/Rate.PNG'
+import value from '../Assets/images/value.PNG'
+
 
 const Dashboard = () => {
   return (
@@ -40,8 +45,8 @@ const Dashboard = () => {
                 <div className="table_sec mb-4">
 
                 </div>
-                <Item title='Analysis on receivables' number='$ 498.58' />
-                <Item title='Burn Rate' number='$ 650.10' month='per month' />
+                <Item title='Analysis on receivables' number='$ 498.58' image={receivables} />
+                <Item title='Burn Rate' number='$ 650.10' month='per month' image={Rate} />
 
               </Col>
               <Col lf={6} md={6}>
@@ -56,8 +61,8 @@ const Dashboard = () => {
                     <Credit />
                   </div>
                 </div>
-                <Item title='Analysis on payable' number='$ 5,410.40' />
-                <Item title='Customer lifetime value' number='$ 8,312.31' />
+                <Item title='Analysis on payable' number='$ 5,410.40' image={payable} />
+                <Item title='Customer lifetime value' number='$ 8,312.31' image={value} />
 
               </Col>
             </Row>
