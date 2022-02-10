@@ -41,13 +41,26 @@
         position: relative;
         .icon {
             position: absolute;
-            right: 15px;
-            top: 28px;
             border-radius: 10px;
             width: 46px;
             height: 45px;
             background: rgba(242, 244, 252, 0.06);
             @include flex(center, center, null);
+        }
+        .bankchart {
+            border-bottom: 1px solid #2f355b;
+            position: relative;
+            .icon {
+                right: 0px;
+                top: 28px;
+            }
+        }
+        .credit {
+            position: relative;
+            .icon {
+                right: 0px;
+                top: 28px;
+            }
         }
     }
     .table {

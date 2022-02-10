@@ -1,6 +1,6 @@
 export { default as IconAdd } from './1.svg';
 export { default as IconAlert } from './2.svg';
-export { default as IconAlertFill } from './3.svg';
+export { default as Icon3 } from './3.svg';
 export { default as IconBell } from './bell.svg';
 export { default as IconCalendar } from './calendar.svg';
 export { default as IconCricle } from './cricle.svg';
