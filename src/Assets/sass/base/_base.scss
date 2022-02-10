@@ -1,0 +1,57 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Circular-Std-Font";
+}
+table,
+tr,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+a,
+li,
+ul,
+ol,
+p,
+form,
+input {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: normal;
+  outline: none;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none !important;
+  outline: none !important;
+}
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+input:focus,
+textarea:focus {
+  border: none;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Circular-Std-Font";
+  src: url("../../fonts/Circular-Std-Font.otf");
+}

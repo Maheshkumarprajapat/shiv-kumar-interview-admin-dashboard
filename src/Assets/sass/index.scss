@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------
+* Template Name    : Binery frontend coding challenge
+* Auther Name      : Shiv Kumar Prajapat
+* File Description : This files Includes all Style CSS
+*------------------------------------------------------------*/
+
+/*======================================================================
+ Table of Content:
+
+=================================
+  Components CSS
+=================================
+
+01. Base
+02. Variables
+03. Mixins
+04. Utils
+05. SideBar
+06. Table
+07. Home
+08. Home Card
+09. About
+10. Service
+
+
+ ========================================================================*/
+
+@import "./base/base";
+
+// import abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// import utils
+@import "./utils/utils";
+
+// import components
+@import "./components/sidebar";
+@import "./components/table";

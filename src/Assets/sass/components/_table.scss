@@ -1,0 +1,55 @@
+.home {
+    &_head {
+        @include flex(center, space-between, null);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.table_sec {
+    padding: 13px 20px;
+    box-shadow: $shadow;
+
+    .table {
+        margin-bottom: 0;
+        & > :not(:first-child) {
+            border-top: 1px solid #707082;
+        }
+        & > :not(caption) > * > * {
+            padding-left: 0;
+        }
+    }
+    &_head {
+        @include flex(center, space-between, null);
+        margin-bottom: 13px;
+        span {
+            font-family: Circular Std;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+    }
+    thead th {
+        // font-family: "Circular-Std-Font";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $blue;
+        opacity: 0.7;
+    }
+    thead th:last-child {
+        padding-right: 0;
+        text-align: right;
+    }
+    tbody td {
+        font-size: 14px;
+        &:first-child {
+            color: $blue;
+            opacity: 0.5;
+        }
+        &:last-child {
+            font-weight: 600;
+            padding-right: 0;
+            text-align: right;
+        }
+    }
+}

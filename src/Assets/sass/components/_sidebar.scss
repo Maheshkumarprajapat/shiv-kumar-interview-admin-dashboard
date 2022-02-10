@@ -1,0 +1,77 @@
+body {
+    background-color: $lightwhite !important;
+}
+.main-container {
+    @include flex(null, null, null);
+}
+main {
+    padding: 25px;
+    width: 100%;
+}
+
+.title {
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+    background: $white;
+    color: $white;
+    height: 100vh;
+    width: 100px;
+    .logo {
+        @include flex(center, center, null);
+        margin-bottom: 50px;
+    }
+    &_footer {
+        @include flex(null, center, column);
+
+        .user-img {
+            margin: 40px auto 0 auto;
+            border-radius: 100%;
+            width: 46px;
+            height: 46px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .routes {
+        margin-top: 15px;
+        @include flex(null, null, column);
+        gap: 24px;
+        a {
+            border-right: 4px solid transparent;
+            transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            .icon {
+                width: 46px;
+                height: 46px;
+                background-color: transparent;
+                margin: 0 auto;
+                border-radius: 15px;
+                color: #cccccc;
+                border: 1px solid $border-color;
+                @include flex(center, center, null);
+            }
+            &:hover {
+                border-right: 4px solid $orange;
+                transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+                .icon {
+                    background-color: #ec560042;
+                }
+            }
+            &.active {
+                border-right: 4px solid $orange;
+                .icon {
+                    border: transparent;
+                    background-color: #ec560042;
+                }
+            }
+        }
+    }
+}
