@@ -1,10 +1,9 @@
 import React from 'react'
 import { Col, Container, Row, Table, Dropdown } from 'react-bootstrap'
 import { IconCalendar, IconHome, Icon3 } from '../Assets/images/icons'
-import BankChart from '../components/BankChart'
-import CreditChart from '../components/CreditChart'
+import BankChart from '../components/chart/BankChart'
+import CreditChart from '../components/chart/CreditChart'
 import Item from '../components/Item'
-// import BankChart from '../components/BankChart'
 
 const Dashboard = () => {
   return (
