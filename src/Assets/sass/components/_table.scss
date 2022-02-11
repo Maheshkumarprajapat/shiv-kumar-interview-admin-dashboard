@@ -1,152 +1,210 @@
 .home {
-    &_head {
-        @include flex(center, space-between, null);
-        width: 100%;
-        margin-bottom: 20px;
-        .dropdown {
-            button {
-                background-color: $white !important;
-                border: 1px solid rgba(1, 9, 55, 0.1) !important;
-                border-radius: 10px;
-                font-size: 13px;
-                color: $blue !important;
-                height: 44px;
-                width: 204px;
-                @include flex(center, null, null);
-                &::after {
-                    right: 14px;
-                    position: absolute;
-                    top: 50%;
-                }
-                &:focus {
-                    box-shadow: none !important;
-                }
-                img {
-                    margin-right: 10px;
-                }
-            }
-            .dropdown-menu {
-                width: 100%;
-            }
+  &_head {
+    @include flex(center, space-between, null);
+    width: 100%;
+    margin-bottom: 20px;
+    .dropdown {
+      button {
+        background-color: $white !important;
+        border: 1px solid rgba(1, 9, 55, 0.1) !important;
+        border-radius: 10px;
+        font-size: 13px;
+        color: $blue !important;
+        height: 44px;
+        width: 204px;
+        @include flex(center, null, null);
+        &::after {
+          right: 14px;
+          position: absolute;
+          top: 50%;
         }
+        &:focus {
+          box-shadow: none !important;
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+      .dropdown-menu {
+        width: 100%;
+      }
     }
+  }
 }
 .table_sec {
-    padding: 13px 20px;
-    box-shadow: $shadow;
-    background-color: $white;
-    border-radius: 10px;
-    &.bank-sec {
-        background-color: #262d54;
-        position: relative;
-        .icon {
-            position: absolute;
-            border-radius: 10px;
-            width: 46px;
-            height: 45px;
-            background: rgba(242, 244, 252, 0.06);
-            @include flex(center, center, null);
-        }
-        .bankchart {
-            border-bottom: 1px solid #2f355b;
-            position: relative;
-            .icon {
-                right: 0px;
-                top: 28px;
-            }
-        }
-        .credit {
-            position: relative;
-            .icon {
-                right: 0px;
-                top: 28px;
-            }
-        }
+  padding: 13px 20px;
+  box-shadow: $shadow;
+  background-color: $white;
+  border-radius: 10px;
+  &.bank-sec {
+    background-color: #262d54;
+    position: relative;
+    .icon {
+      position: absolute;
+      border-radius: 10px;
+      width: 46px;
+      height: 45px;
+      background: rgba(242, 244, 252, 0.06);
+      @include flex(center, center, null);
     }
-    .table {
-        margin-bottom: 0;
-        & > :not(:first-child) {
-            border-top: 1px solid #707082;
-        }
-        & > :not(caption) > * > * {
-            padding-left: 0;
-            font-family: "IBMPlexSans-Regular";
-            color: #010937;
-        }
-    }
-    &_head {
-        @include flex(center, space-between, null);
-        margin-bottom: 13px;
-        span {
+    .bankchart {
+      border-bottom: 1px solid #2f355b;
+      position: relative;
+      .icon {
+        right: 0px;
+        top: 28px;
+      }
+      .content {
+        padding: 10px 0px;
+        .balances {
+          h5 {
             font-family: "circular-std-medium";
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 18px;
+            font-size: 18px;
+            color: #f2f4fc;
+          }
+          p {
+            font-family: "circular-std-medium";
+            font-size: 25px;
+            color: #f2f4fc;
+          }
         }
-    }
-    thead th {
-        font-family: "circular-std-medium";
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16px;
-        color: $blue;
-        opacity: 0.7;
-    }
-    thead th:last-child {
-        padding-right: 0;
-        text-align: right;
-    }
-    tbody td {
-        font-size: 14px;
-        &:first-child {
-            color: $blue;
-            opacity: 0.5;
+        .month {
+          display: flex;
+          span {
+            color: #fff;
+            font-family: "circular-std-medium";
+            font-size: 18px;
+            margin-right: 10px;
+          }
+          p {
+            color: #f2f4fc52;
+            font-family: "circular-std-medium";
+            font-size: 16px;
+          }
         }
-        &:last-child {
-            font-weight: 600;
-            padding-right: 0;
-            text-align: right;
-            color: #010937;
-        }
+      }
     }
+    .credit {
+      position: relative;
+      .icon {
+        right: 0px;
+        top: 28px;
+      }
+      .credit-content {
+        padding: 10px 0px;
+        .cards-balances {
+          h5 {
+            font-family: "circular-std-medium";
+            font-size: 18px;
+            color: #f2f4fc;
+          }
+          p {
+            font-family: "circular-std-medium";
+            font-size: 25px;
+            color: #f2f4fc;
+          }
+        }
+        .cards-month {
+          display: flex;
+          span {
+            color: #fff;
+            font-family: "circular-std-medium";
+            font-size: 18px;
+            margin-right: 10px;
+          }
+          p {
+            color: #f2f4fc52;
+            font-family: "circular-std-medium";
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .table {
+    margin-bottom: 0;
+    & > :not(:first-child) {
+      border-top: 1px solid #707082;
+    }
+    & > :not(caption) > * > * {
+      padding-left: 0;
+      font-family: "IBMPlexSans-Regular";
+      color: #010937;
+    }
+  }
+  &_head {
+    @include flex(center, space-between, null);
+    margin-bottom: 13px;
+    span {
+      font-family: "circular-std-medium";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+  thead th {
+    font-family: "circular-std-medium";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $blue;
+    opacity: 0.7;
+  }
+  thead th:last-child {
+    padding-right: 0;
+    text-align: right;
+  }
+  tbody td {
+    font-size: 14px;
+    &:first-child {
+      color: $blue;
+      opacity: 0.5;
+    }
+    &:last-child {
+      font-weight: 600;
+      padding-right: 0;
+      text-align: right;
+      color: #010937;
+    }
+  }
 }
 
 .item-box {
-    box-shadow: $shadow;
-    background-color: $white;
-    border-radius: 10px;
-    padding: 17px 20px;
-    margin-bottom: 25px;
-    @include flex(center, space-between, null);
-    &:last-child {
-        margin-bottom: 0;
+  box-shadow: $shadow;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 17px 20px;
+  margin-bottom: 25px;
+  @include flex(center, space-between, null);
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .content {
+    h3 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-bottom: 7px;
+      color: $blue;
     }
-    .content {
-        h3 {
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 18px;
-            margin-bottom: 7px;
-            color: $blue;
-        }
-        p {
-            font-size: 24px;
-            font-weight: 500;
-            opacity: 0.6;
-            color: $blue;
-            line-height: 30px;
-            margin-bottom: 0;
-            span {
-                font-size: 14px;
-            }
-        }
+    p {
+      font-size: 24px;
+      font-weight: 500;
+      opacity: 0.6;
+      color: $blue;
+      line-height: 30px;
+      margin-bottom: 0;
+      span {
+        font-size: 14px;
+      }
     }
-    // .img-sec {
-    //     background-color: red;
-    // }
+  }
+  // .img-sec {
+  //     background-color: red;
+  // }
 }
 
 @font-face {
-    font-family: "IBMPlexSans-Regular";
-    src: url("../../fonts/IBMPlexSans-Regular.ttf");
-  }
+  font-family: "IBMPlexSans-Regular";
+  src: url("../../fonts/IBMPlexSans-Regular.ttf");
+}

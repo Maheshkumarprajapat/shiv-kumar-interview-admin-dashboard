@@ -48,11 +48,11 @@ export default function BankChart() {
     return (
         <>
             <div className="content">
-                <div className="">
+                <div className="balances">
                     <h5>Bank Balances</h5>
                     <p>$ 201,142</p>
                 </div>
-                <div className="">
+                <div className="month">
                     <span>10%</span>
                     <p>Since Last Month</p>
                 </div>

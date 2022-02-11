@@ -57,7 +57,7 @@ const Dashboard = () => {
                       <img src={IconHome} alt="" />
                     </div>
                     <BankChart />
-                  </div>
+                  </div>  
                   <div className="credit">
                     <div className="icon">
                       <img src={Icon3} alt="" />

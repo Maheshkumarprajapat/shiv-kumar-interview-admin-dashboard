@@ -47,12 +47,12 @@ export default function CreditChart() {
     };
     return (<>
 
-        <div className="content">
-            <div className="">
+        <div className="credit-content">
+            <div className="cards-balances">
                 <h5>Credit Cards Balances</h5>
                 <p>$ 5,410</p>
             </div>
-            <div className="">
+            <div className="cards-month">
                 <span>2%</span>
                 <p>Since Last Month</p>
             </div>
